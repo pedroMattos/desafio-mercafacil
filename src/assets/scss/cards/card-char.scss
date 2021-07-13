@@ -1,12 +1,37 @@
 .card {
-  padding: 5px;
+  // padding: 5px;
   position: relative;
+  overflow: hidden;
+  height: fit-content;
+  height: 220px;
+  .overlay {
+    position: absolute;
+    background-color: $bg-dark-alpha;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+  }
+  &:hover {
+    .image-card {
+      transform: scale(1.1);
+      transition-duration: .5s;
+    }
+  }
   .char-name {
     position: absolute;
+    z-index: 2;
+    color: white;
+    font-weight: 700;
+    left: 50%;
+    transform: translateX(-50%);
   }
   .image-card {
-    width: 96%;
+    width: 100%;
+    transform: scale(1);
     object-fit: cover;
+    transition-duration: .5s;
   }
 }
 
@@ -14,6 +39,6 @@
   display: flex;
   flex-wrap: wrap;
   .wrap-card {
-    flex: 1 0  21%;
+    flex: 1 0 20%;
   }
 }
