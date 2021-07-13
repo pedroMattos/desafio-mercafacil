@@ -1,0 +1,19 @@
+.card {
+  padding: 5px;
+  position: relative;
+  .char-name {
+    position: absolute;
+  }
+  .image-card {
+    width: 96%;
+    object-fit: cover;
+  }
+}
+
+.card-area {
+  display: flex;
+  flex-wrap: wrap;
+  .wrap-card {
+    flex: 1 0  21%;
+  }
+}

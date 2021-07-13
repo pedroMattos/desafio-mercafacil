@@ -1,0 +1,11 @@
+@import '../../../node_modules/bootstrap-4-grid/css/grid.min.css';
+@import 'variables.scss';
+@import 'cards/card-char.scss';
+
+body {
+  margin: 0;
+}
+
+html {
+  background-color: $bg-dark;
+}
